@@ -26,7 +26,7 @@ const filteredCharacterList = CharacterList.filter( char =>{
             <h2>Ricky and Morty Characters</h2>
             <input className="search" type="text" onChange={e=>setSearch(e.target.value)}/>
             <button className="btn" type="submit" >Search</button>
-            <button className="btn" url="https://localhost:3000">Reset</button>
+            <form action="http://localhost:3000/"><button className="btn">Reset</button></form> 
             <div className="card">
             {filteredCharacterList.map((chars, id) =>{
                 return <CharacterCard key={id} chars={chars}/>
